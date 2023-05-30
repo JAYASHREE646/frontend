@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>SIGN UP PAGE </title>
+</head>
+<body>
+    <div class="Form">
+        <h1>LOGIN DETAILS</h1>
+        <form action="" id="form" class="form">
+            <div class="input">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username" autocomplete="off" required />
+                <small>Error message</small>
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Email" autocomplete="off" required />
+                <small>Error message</small>
+            </div>
+            <div class="input">
+                <label for="Phonenumber">Phonenumber</label>
+                <input type="number" name="Phonenumber" id="Phonenumber" placeholder="Phonenumber" maxlength="10" pattern="[1-9]{1}[0-9]{9}"  required/>
+                <small>Error message</small>
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password" required />
+                <small>Error message</small>
+            </div>
+            <div class="input">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"
+                    required />
+                <small>Error message</small>
+            </div>
+            <button>Submit</button><br>
+            <input type="submit"/><input type="reset"/>
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+            <div class="container signin">
+                <p>Already have an account? </p><br>
+                <a href="login.html">LOGIN PAGE</a>
+            </div>
+        </form>
+    </div>
+    <script src="forms.js"></script>
+    
+    
+</body>
+</html>
